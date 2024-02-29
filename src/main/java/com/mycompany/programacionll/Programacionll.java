@@ -4,6 +4,7 @@
 
 package com.mycompany.programacionll;
 
+import people.Character;
 /**
  *
  * @author SCIS2PC08
@@ -21,24 +22,12 @@ public class Programacionll {
         
         homero.saySomething();
         bart.saySomething();
-       
+        
+        Character apu = new Character();
+        apu.setName("Apu");
+        apu.setPhrase("Vuelvas Prontos");
+        
+        apu.saySomething();
     }
     
-      static class  Character{
-        String name;
-        int age;
-        char gender;
-        String phrase;
-
-        public  Character(String name, int age, char gender, String phrase) {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            this.phrase = phrase;
-        }      
-        
-        public  void saySomething() {
-            System.out.println(this.phrase);
-        }
-    }
 }
